@@ -121,93 +121,201 @@ namespace Warehouses
                         return answer;
                     }
                 case 215:
-                    partArray[0] = this.part215;
-                    partArray[1] = inv1.part215;
-                    partArray[2] = inv2.part215;
-                    partArray[3] = inv3.part215;
-                    partArray[4] = inv4.part215;
-                    partArray[5] = inv5.part215;
-
-                    int maxValue2 = 0;
-                    int wh2 = 0;
-
-                    for (int i = 0; i < partArray.Length; i++)
+                    if (action.Equals("S"))
                     {
-                        if (partArray[i] > maxValue2)
+                        partArray[0] = this.part215;
+                        partArray[1] = inv1.part215;
+                        partArray[2] = inv2.part215;
+                        partArray[3] = inv3.part215;
+                        partArray[4] = inv4.part215;
+                        partArray[5] = inv5.part215;
+
+                        int maxValue = 0;
+                        int wh = 0;
+
+                        for (int i = 0; i < partArray.Length; i++)
                         {
-                            maxValue2 = partArray[i];
-                            wh2 = i;
+                            if (partArray[i] > maxValue)
+                            {
+                                maxValue = partArray[i];
+                                wh = i;
+                            }
                         }
+                        answer[0] = maxValue;
+                        answer[1] = wh;
+                        return answer;
                     }
-                    answer[0] = maxValue2;
-                    answer[1] = wh2;
-                    return answer;
+                    else
+                    {
+                        partArray[0] = this.part215;
+                        partArray[1] = inv1.part215;
+                        partArray[2] = inv2.part215;
+                        partArray[3] = inv3.part215;
+                        partArray[4] = inv4.part215;
+                        partArray[5] = inv5.part215;
+
+                        int minValue = 10000;
+                        int wh = 0;
+
+                        for (int i = 0; i < partArray.Length; i++)
+                        {
+                            if (partArray[i] < minValue)
+                            {
+                                minValue = partArray[i];
+                                wh = i;
+                            }
+                        }
+                        answer[0] = minValue;
+                        answer[1] = wh;
+                        return answer;
+                    }
                 case 525:
-                    partArray[0] = this.part525;
-                    partArray[1] = inv1.part525;
-                    partArray[2] = inv2.part525;
-                    partArray[3] = inv3.part525;
-                    partArray[4] = inv4.part525;
-                    partArray[5] = inv5.part525;
-
-                    int maxValue4 = 0;
-                    int wh4 = 0;
-
-                    for (int i = 0; i < partArray.Length; i++)
+                    if (action.Equals("S"))
                     {
-                        if (partArray[i] > maxValue4)
+                        partArray[0] = this.part525;
+                        partArray[1] = inv1.part525;
+                        partArray[2] = inv2.part525;
+                        partArray[3] = inv3.part525;
+                        partArray[4] = inv4.part525;
+                        partArray[5] = inv5.part525;
+
+                        int maxValue = 0;
+                        int wh = 0;
+
+                        for (int i = 0; i < partArray.Length; i++)
                         {
-                            maxValue4 = partArray[i];
-                            wh4 = i;
+                            if (partArray[i] > maxValue)
+                            {
+                                maxValue = partArray[i];
+                                wh = i;
+                            }
                         }
+                        answer[0] = maxValue;
+                        answer[1] = wh;
+                        return answer;
                     }
-                    answer[0] = maxValue4;
-                    answer[1] = wh4;
-                    return answer;
+                    else
+                    {
+                        partArray[0] = this.part525;
+                        partArray[1] = inv1.part525;
+                        partArray[2] = inv2.part525;
+                        partArray[3] = inv3.part525;
+                        partArray[4] = inv4.part525;
+                        partArray[5] = inv5.part525;
+
+                        int minValue = 10000;
+                        int wh = 0;
+
+                        for (int i = 0; i < partArray.Length; i++)
+                        {
+                            if (partArray[i] < minValue)
+                            {
+                                minValue = partArray[i];
+                                wh = i;
+                            }
+                        }
+                        answer[0] = minValue;
+                        answer[1] = wh;
+                        return answer;
+                    }
                 case 410:
-                    partArray[0] = this.part410;
-                    partArray[1] = inv1.part410;
-                    partArray[2] = inv2.part410;
-                    partArray[3] = inv3.part410;
-                    partArray[4] = inv4.part410;
-                    partArray[5] = inv5.part410;
-
-                    int maxValue3 = 0;
-                    int wh3 = 0;
-
-                    for (int i = 0; i < partArray.Length; i++)
+                    if (action.Equals("S"))
                     {
-                        if (partArray[i] > maxValue3)
+                        partArray[0] = this.part410;
+                        partArray[1] = inv1.part410;
+                        partArray[2] = inv2.part410;
+                        partArray[3] = inv3.part410;
+                        partArray[4] = inv4.part410;
+                        partArray[5] = inv5.part410;
+
+                        int maxValue = 0;
+                        int wh = 0;
+
+                        for (int i = 0; i < partArray.Length; i++)
                         {
-                            maxValue3 = partArray[i];
-                            wh3 = i;
+                            if (partArray[i] > maxValue)
+                            {
+                                maxValue = partArray[i];
+                                wh = i;
+                            }
                         }
+                        answer[0] = maxValue;
+                        answer[1] = wh;
+                        return answer;
                     }
-                    answer[0] = maxValue3;
-                    answer[1] = wh3;
-                    return answer;
+                    else
+                    {
+                        partArray[0] = this.part410;
+                        partArray[1] = inv1.part410;
+                        partArray[2] = inv2.part410;
+                        partArray[3] = inv3.part410;
+                        partArray[4] = inv4.part410;
+                        partArray[5] = inv5.part410;
+
+                        int minValue = 10000;
+                        int wh = 0;
+
+                        for (int i = 0; i < partArray.Length; i++)
+                        {
+                            if (partArray[i] < minValue)
+                            {
+                                minValue = partArray[i];
+                                wh = i;
+                            }
+                        }
+                        answer[0] = minValue;
+                        answer[1] = wh;
+                        return answer;
+                    }
                 case 711:
-                    partArray[0] = this.part711;
-                    partArray[1] = inv1.part711;
-                    partArray[2] = inv2.part711;
-                    partArray[3] = inv3.part711;
-                    partArray[4] = inv4.part711;
-                    partArray[5] = inv5.part711;
-
-                    int maxValue5 = 0;
-                    int wh5 = 0;
-
-                    for (int i = 0; i < partArray.Length; i++)
+                    if (action.Equals("S"))
                     {
-                        if (partArray[i] > maxValue5)
+                        partArray[0] = this.part711;
+                        partArray[1] = inv1.part711;
+                        partArray[2] = inv2.part711;
+                        partArray[3] = inv3.part711;
+                        partArray[4] = inv4.part711;
+                        partArray[5] = inv5.part711;
+
+                        int maxValue = 0;
+                        int wh = 0;
+
+                        for (int i = 0; i < partArray.Length; i++)
                         {
-                            maxValue5 = partArray[i];
-                            wh5 = i;
+                            if (partArray[i] > maxValue)
+                            {
+                                maxValue = partArray[i];
+                                wh = i;
+                            }
                         }
+                        answer[0] = maxValue;
+                        answer[1] = wh;
+                        return answer;
                     }
-                    answer[0] = maxValue5;
-                    answer[1] = wh5;
-                    return answer;
+                    else
+                    {
+                        partArray[0] = this.part711;
+                        partArray[1] = inv1.part711;
+                        partArray[2] = inv2.part711;
+                        partArray[3] = inv3.part711;
+                        partArray[4] = inv4.part711;
+                        partArray[5] = inv5.part711;
+
+                        int minValue = 10000;
+                        int wh = 0;
+
+                        for (int i = 0; i < partArray.Length; i++)
+                        {
+                            if (partArray[i] < minValue)
+                            {
+                                minValue = partArray[i];
+                                wh = i;
+                            }
+                        }
+                        answer[0] = minValue;
+                        answer[1] = wh;
+                        return answer;
+                    }
             }
             return answer;
         }
